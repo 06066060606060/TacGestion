@@ -14,7 +14,7 @@
         </a>
 
         <flux:navlist variant="outline" class="w-64">
-            <flux:navlist.group :heading="__('Platform')" class="grid">
+            <flux:navlist.group class="grid">
                 <flux:navlist.item
                     icon="home"
                     :href="route('dashboard')"

@@ -1,6 +1,4 @@
-{{-- resources/views/articles/index.blade.php --}}
+{{-- resources/views/stocks/index.blade.php --}}
 <x-layouts.app>
-    <div class="p-6">
-        <h1 class="text-xl font-semibold">Stock</h1>
-    </div>
+    <livewire:stocks-table />
 </x-layouts.app>

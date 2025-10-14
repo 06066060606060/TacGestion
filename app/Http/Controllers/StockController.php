@@ -9,12 +9,13 @@ class StockController extends Controller
 {
     public function index()
     {
-        return view('Stocks.index');
+        // Si tu utilises Livewire pour la page, cette vue devrait juste monter le composant.
+        return view('stocks.index'); // dossier en minuscules
     }
 
     public function create()
     {
-        return view('Stocks.create');
+        return view('stocks.create'); // stocks/create.blade.php
     }
 
     public function store(Request $request)
@@ -24,12 +25,12 @@ class StockController extends Controller
 
     public function show(Stock $stock)
     {
-        return view('Stocks.show', compact('stock'));
+        return view('stocks.show', compact('stock'));
     }
 
     public function edit(Stock $stock)
     {
-        return view('Stocks.edit', compact('stock'));
+        return view('stocks.edit', compact('stock'));
     }
 
     public function update(Request $request, Stock $stock)
@@ -42,4 +43,3 @@ class StockController extends Controller
         // Suppression
     }
 }
-
