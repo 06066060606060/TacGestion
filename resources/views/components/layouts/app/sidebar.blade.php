@@ -29,7 +29,13 @@
                     :href="route('articles.index')"
                     :current="request()->routeIs('articles.*')"
                     wire:navigate>Articles</flux:navlist.item>
-
+        
+                 <flux:navlist.item
+                    icon="document-text"
+                    :href="route('colis.index')"
+                    :current="request()->routeIs('colis.*')"
+                    wire:navigate>Colis</flux:navlist.item>
+         
                 <flux:navlist.item
                     icon="user-group"
                     :href="route('clients.index')"

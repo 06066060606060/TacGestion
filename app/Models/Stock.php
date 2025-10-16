@@ -10,9 +10,19 @@ class Stock extends Model
         'code',
         'reference',
         'designation',
+        'classe',
         'stock',
         'poids_ma_kg',
         'updated_at',
         'emplacement',
     ];
+
+    protected function casts(): array
+{
+    return [
+        'stock' => 'integer',
+        'poids_ma_kg' => 'decimal:3',
+    ];
+}
+
 }

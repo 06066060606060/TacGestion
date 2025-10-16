@@ -1,4 +1,4 @@
 
 <x-layouts.app>
-    <livewire:clients-table />
+     <livewire:colis-table />
 </x-layouts.app>
