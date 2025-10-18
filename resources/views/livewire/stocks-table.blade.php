@@ -205,7 +205,7 @@
                             <span class="inline-flex items-center justify-end gap-2">
                                 <button type="button"
                                     class="inline-flex items-center rounded-md bg-zinc-100 dark:bg-zinc-700 px-2 py-1 text-xs hover:bg-zinc-200 dark:hover:bg-blue-900"
-                                    wire:click="edit({{ $item->id }})" aria-label="Éditer">
+                                    wire:click="edit({{ $item->id }})" aria-label="Éditer" title="Éditer">
                                     {{-- Icone crayon flux --}}
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                         <path d="M17.862 3.487a2.75 2.75 0 0 1 3.888 3.888l-9.903 9.903-5.25 1.75a1 1 0 0 1-1.266-1.265l1.75-5.251 9.781-9.825Zm-2.598 2.598L7.52 14.83l-.959 2.874 2.874-.96 7.785-7.785-2.874-2.874Z"/>
@@ -216,18 +216,18 @@
                                 <button type="button"
                                     class="inline-flex items-center rounded-md bg-zinc-100 dark:bg-zinc-700 px-2 py-1 text-xs hover:bg-zinc-200 dark:hover:bg-red-800 dark:active:bg-red-500"
                                     wire:click="decrement('{{ $item->id }}')"
-                                    wire:loading.attr="disabled" aria-label="Diminuer"
+                                    wire:loading.attr="disabled" aria-label="Diminuer" title="Enlever une unité du stock">
                                     {{-- Icone - flux --}}
-                                    ><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                         <path d="M5.25 10.5a1 1 0 0 1 1-1h11.5a1 1 0 1 1 0 2H6.25a1 1 0 0 1-1-1Z"/>
 </svg>
                                     </button>
 
                                 <button type="button"
                                     class="inline-flex items-center rounded-md bg-zinc-100 dark:bg-zinc-700 px-2 py-1 text-xs hover:bg-zinc-200 dark:hover:bg-green-800 dark:active:bg-green-500"
-                                    wire:click="increment('{{ $item->id }}')" wire:loading.attr="disabled" aria-label="Augmenter"
+                                    wire:click="increment('{{ $item->id }}')" wire:loading.attr="disabled" aria-label="Augmenter " title="Ajouter une unité au stock">
                                     {{-- Icone + flux --}}
-                                    ><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                         <path d="M12 5.25a1 1 0 0 1 1 1v5.75h5.75a1 1 0 1 1 0 2H13v5.75a1 1 0 1 1-2 0V13H5.25a1 1 0 1 1 0-2H11V6.25a1 1 0 0 1 1-1Z"/>
                                     </svg>
                                     </button>

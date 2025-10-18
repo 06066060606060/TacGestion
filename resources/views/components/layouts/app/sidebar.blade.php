@@ -28,7 +28,7 @@
                     icon="document-text"
                     :href="route('articles.index')"
                     :current="request()->routeIs('articles.*')"
-                    wire:navigate>Articles</flux:navlist.item>
+                    wire:navigate>Produits</flux:navlist.item>
         
                  <flux:navlist.item
                     icon="document-text"
